@@ -4,7 +4,7 @@ int main()
 {
 	int a[7]={2,5,4,10,9,8,5},s;
 	int n,k;
-  printf("Enter a no");
+  	printf("Enter a no");
 	scanf("%d",&k);
 	n=sizeof(a)/sizeof(int);
 	a[n]=-999;
