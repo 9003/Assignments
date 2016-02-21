@@ -21,9 +21,8 @@ int inarray(int a[],int l)
 		i++;
 	}
 	n=i;
-  for(i=0;i<n;i++)
+  	for(i=0;i<n;i++)
 	{
-	
 		if(a[i]==l)
 		{
 		   return i;
