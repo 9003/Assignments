@@ -2,11 +2,17 @@
 int inarray(int [],int);
 int main()
 {
-	int a[7]={2,5,4,10,9,8,5},s;
-	int n,k;
-  	printf("Enter a no");
+	int a[10],s;
+	int n,k,m,i;
+	printf("Enter the size");
+	scanf("%d",&m);
+	for(i=0;i<m;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("Enter a no");
 	scanf("%d",&k);
-	n=sizeof(a)/sizeof(int);
+	n=m;
 	a[n]=-999;
 	s=inarray(a,k);
 	printf("%d",s);
@@ -21,15 +27,14 @@ int inarray(int a[],int l)
 		i++;
 	}
 	n=i;
-  	for(i=0;i<n;i++)
+	for(i=0;i<n;i++)
 	{
 		if(a[i]==l)
 		{
-		   return i;
+		return i;
 		}
 	}
 	return -1;
 }
-
 
 
