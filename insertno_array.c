@@ -1,28 +1,28 @@
 #include <stdio.h>
 int main()
 {
-   int  ind, i, n, val;
-   printf("\n enter the size :");
+   int  t,ind, i, n, val,a[50];
+   printf("enter the size :");
    scanf("%d",&n);
    n++;
-   int a[n];
-   printf("\n enter the array elements : \n");
+   t=a[n];
+   printf("enter the array elements : \n");
    for (i = 0; i < n-1; i++)
    {
-        scanf("%d", &a[i]);
+	scanf("%d", &a[i]);
    }
-   printf("\n enter the position :");
+   printf("\n enter the pos :");
    scanf("%d", &ind);
    printf("\n enter the value to insert :");
    scanf("%d", &val);
    for(i=n-1;i>=ind;i--)
    {
-        a[i+1] = a[i];
+	a[i+1] = a[i];
    }
-   a[index] = val;
+   a[ind] = val;
    for (i=0;i<n;i++)
    {
-        printf("%d\t",a[i]);
+	printf("%d\t",a[i]);
    }
    return 0;
 }
