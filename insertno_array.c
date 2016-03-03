@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-   int  index, i, n, val;
+   int  ind, i, n, val;
    printf("\n enter the size :");
    scanf("%d",&n);
    n++;
